@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legacy Impact Coaching Academy | Transform Potential. Build Excellence. Create Legacy.</title>
+    <meta name="description"
+        content="Legacy Impact Coaching Academy (LICA) helps individuals, families, leaders, entrepreneurs, professionals, students and organisations transform potential into purposeful performance and enduring impact.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { DEFAULT: '#0B3868', dark: '#082745', light: '#1656A3' },
+                        gold: { DEFAULT: '#C89B3C', light: '#E4C877', dark: '#9C7526' },
+                        cream: '#F7F5EF',
+                        ink: '#12202E',
+                    },
+                    fontFamily: {
+                        heading: ['Poppins', 'sans-serif'],
+                        body: ['DM Sans', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: #12202E;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .font-heading {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .rule-gold {
+            position: relative;
+        }
+
+        .rule-gold::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 56px;
+            height: 4px;
+            background: #C89B3C;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-ink antialiased">
+
+    <!-- NAV -->
+    <header class="fixed top-0 inset-x-0 z-50 bg-white/95 backdrop-blur border-b border-navy/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="legacy.jpeg" class="h-14 w-16" alt="Legacy Impact Coaching Academy">
+            </a>
+            <nav class="hidden md:flex items-center gap-9 font-medium text-[15px] text-navy">
+                <a href="index.html" class="text-gold-dark border-b-2 border-gold pb-1">Home</a>
+                <a href="about.html" class="hover:text-gold-dark transition-colors">About</a>
+                <a href="services.html" class="hover:text-gold-dark transition-colors">Services</a>
+                <a href="contact.html" class="hover:text-gold-dark transition-colors">Contact</a>
+            </nav>
+            <a href="contact.html"
+                class="hidden md:inline-flex items-center bg-navy hover:bg-navy-dark text-white text-sm font-semibold px-5 py-2.5 rounded-sm transition-colors">Book
+                a Consultation</a>
+            <button id="menuBtn" class="md:hidden text-navy" aria-label="Open menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobileMenu"
+            class="hidden md:hidden border-t border-navy/10 bg-white px-6 py-4 space-y-3 font-medium text-navy">
+            <a href="index.html" class="block py-1">Home</a>
+            <a href="about.html" class="block py-1">About</a>
+            <a href="services.html" class="block py-1">Services</a>
+            <a href="contact.html" class="block py-1">Contact</a>
+            <a href="contact.html"
+                class="block mt-2 bg-navy text-white text-center font-semibold px-5 py-2.5 rounded-sm">Book a
+                Consultation</a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="pt-32 pb-20 lg:pt-44 lg:pb-28 bg-cream relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12 items-center relative z-10">
+            <div class="lg:col-span-7">
+                <p class="text-gold-dark font-semibold tracking-wide text-sm mb-5">A Transformation Institution for
+                    People, Families, Leaders, Entrepreneurs, Professionals, Students and Organisations</p>
+                <h1 class="font-heading font-bold text-navy text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.12] mb-6">
+                    Transform Potential.<br>Build Excellence.<br><span class="text-gold-dark">Create Legacy.</span>
+                </h1>
+                <p class="text-lg text-navy/80 max-w-xl mb-9 leading-relaxed">
+                    We help individuals, families, leaders, entrepreneurs, professionals, students and organisations
+                    turn potential into purposeful performance and impact that outlives them.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="services.html"
+                        class="bg-navy hover:bg-navy-dark text-white font-semibold px-7 py-3.5 rounded-sm transition-colors">Explore
+                        Our Programmes</a>
+                    <a href="contact.html"
+                        class="border-2 border-navy text-navy hover:bg-navy hover:text-white font-semibold px-7 py-3.5 rounded-sm transition-colors">Book
+                        a Transformation Consultation</a>
+                </div>
+            </div>
+            <div class="lg:col-span-5">
+                <div class="relative rounded-sm overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1000&q=80"
+                        alt="Coach guiding a leader through a strategy conversation"
+                        class="w-full h-[420px] object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy/70 via-navy/0 to-navy/0"></div>
+                </div>
+                <div class="bg-navy text-white p-6 rounded-sm -mt-14 ml-6 mr-6 relative shadow-xl">
+                    <p class="font-heading font-semibold text-gold-light text-sm mb-2">OUR CORE PROMISE</p>
+                    <p class="text-sm leading-relaxed text-white/90">We don't only inspire people to dream bigger. We
+                        help them build the capacity, systems, mindset, character and strategies required to turn those
+                        dreams into reality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHILOSOPHY STRIP -->
+    <section class="bg-navy text-white py-14">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <p class="text-gold-light font-heading font-semibold text-sm mb-3">OUR TRANSFORMATION PHILOSOPHY</p>
+            <div class="flex flex-wrap gap-x-3 gap-y-2 text-xl sm:text-2xl font-heading font-semibold">
+                <span>Diagnose</span><span class="text-gold">→</span><span>Discover</span><span
+                    class="text-gold">→</span><span>Develop</span><span
+                    class="text-gold">→</span><span>Deploy</span><span
+                    class="text-gold">→</span><span>Deliver</span><span class="text-gold">→</span><span>Multiply</span>
+            </div>
+            <p class="mt-5 text-white/75 max-w-3xl leading-relaxed">We professionally diagnose our clients' challenges,
+                then assist them to discover their potential, develop their capacity, deploy their gifts and resources,
+                deliver exceptional results, and multiply their impact.</p>
+        </div>
+    </section>
+
+    <!-- WELCOME -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-14">
+            <div class="lg:col-span-5">
+                <p class="rule-gold pt-5 text-gold-dark font-semibold text-sm mb-3">WELCOME TO LICA</p>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl leading-tight">Where potential becomes
+                    performance, and success becomes legacy.</h2>
+            </div>
+            <div class="lg:col-span-7 space-y-5 text-navy/80 leading-relaxed">
+                <p>The world does not suffer from a shortage of talented people. It suffers from a shortage of people
+                    who intentionally develop their potential, convert knowledge into value, transform challenges into
+                    opportunities and use their success to create lasting impact by taking action.</p>
+                <p>We are a multidisciplinary transformation, coaching, leadership, parenting, education, business and
+                    performance development institution committed to helping people and organisations become
+                    significantly better versions of themselves.</p>
+                <p class="font-medium text-navy">We work at the intersection of Human Potential, Personal
+                    Transformation, Leadership, Excellence, Business, Family, Parenting, Education, Performance and
+                    Legacy.</p>
+                <p>We don't believe in one-size-fits-all transformation. We believe in purposeful, personalised and
+                    practical transformation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHO WE SERVE -->
+    <section class="py-24 bg-cream">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="max-w-2xl mb-14">
+                <p class="text-gold-dark font-semibold text-sm mb-3">WHO WE SERVE</p>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl">Every stage of life and leadership.
+                </h2>
+            </div>
+
+            <div class="space-y-16">
+                <!-- Row 1 -->
+                <div class="grid lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-5 order-2 lg:order-1">
+                        <span class="text-gold-dark font-heading font-semibold text-sm">01</span>
+                        <h3 class="font-heading font-bold text-navy text-2xl mt-2 mb-3">Parents & Families</h3>
+                        <p class="text-navy/75 leading-relaxed mb-4">We help parents become more intentional architects
+                            of their children's development, family culture and long-term legacy — building stronger
+                            relationships, effective parenting systems and preparing the next generation for purpose and
+                            character.</p>
+                        <a href="services.html#parenting"
+                            class="text-navy font-semibold border-b-2 border-gold pb-0.5 hover:text-gold-dark">Legacy
+                            Parenting & Family Transformation</a>
+                    </div>
+                    <div class="lg:col-span-7 order-1 lg:order-2">
+                        <img src="https://images.unsplash.com/photo-1602028915047-37269d1a73f7?auto=format&fit=crop&w=1200&q=80"
+                            alt="Family sitting together at home" class="w-full h-72 object-cover rounded-sm">
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="grid lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80"
+                            alt="Students collaborating and studying" class="w-full h-72 object-cover rounded-sm">
+                    </div>
+                    <div class="lg:col-span-5">
+                        <span class="text-gold-dark font-heading font-semibold text-sm">02</span>
+                        <h3 class="font-heading font-bold text-navy text-2xl mt-2 mb-3">Students & Young People</h3>
+                        <p class="text-navy/75 leading-relaxed mb-4">We help students build the mindset, character,
+                            habits and strategies to excel academically and prepare meaningfully for life beyond school
+                            — from purpose discovery to career preparation and entrepreneurship.</p>
+                        <a href="services.html#students"
+                            class="text-navy font-semibold border-b-2 border-gold pb-0.5 hover:text-gold-dark">Student
+                            Transformation</a>
+                    </div>
+                </div>
+                <!-- Row 3 -->
+                <div class="grid lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-5 order-2 lg:order-1">
+                        <span class="text-gold-dark font-heading font-semibold text-sm">03</span>
+                        <h3 class="font-heading font-bold text-navy text-2xl mt-2 mb-3">Professionals & Executives</h3>
+                        <p class="text-navy/75 leading-relaxed mb-4">We help professionals and leaders improve
+                            performance, leadership capacity, personal effectiveness, communication, strategic thinking
+                            and career impact.</p>
+                        <a href="services.html#executives"
+                            class="text-navy font-semibold border-b-2 border-gold pb-0.5 hover:text-gold-dark">Executive
+                            & Leadership Development</a>
+                    </div>
+                    <div class="lg:col-span-7 order-1 lg:order-2">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
+                            alt="Executives in a leadership meeting" class="w-full h-72 object-cover rounded-sm">
+                    </div>
+                </div>
+                <!-- Row 4 -->
+                <div class="grid lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=80"
+                            alt="Entrepreneurs working on a business plan" class="w-full h-72 object-cover rounded-sm">
+                    </div>
+                    <div class="lg:col-span-5">
+                        <span class="text-gold-dark font-heading font-semibold text-sm">04</span>
+                        <h3 class="font-heading font-bold text-navy text-2xl mt-2 mb-3">Entrepreneurs & Business Owners
+                        </h3>
+                        <p class="text-navy/75 leading-relaxed mb-4">We help entrepreneurs move from effort-driven
+                            activity to strategic, structured and sustainable business growth — covering strategy,
+                            sales, marketing, systems and personal branding.</p>
+                        <a href="services.html#business"
+                            class="text-navy font-semibold border-b-2 border-gold pb-0.5 hover:text-gold-dark">Business
+                            & Entrepreneurial Coaching</a>
+                    </div>
+                </div>
+                <!-- Row 5 -->
+                <div class="grid lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-5 order-2 lg:order-1">
+                        <span class="text-gold-dark font-heading font-semibold text-sm">05</span>
+                        <h3 class="font-heading font-bold text-navy text-2xl mt-2 mb-3">Organisations & Institutions
+                        </h3>
+                        <p class="text-navy/75 leading-relaxed mb-4">We partner with schools, universities,
+                            corporations, professional bodies, government institutions and churches to develop people
+                            and improve performance.</p>
+                        <a href="services.html#corporate"
+                            class="text-navy font-semibold border-b-2 border-gold pb-0.5 hover:text-gold-dark">Corporate
+                            & Institutional Solutions</a>
+                    </div>
+                    <div class="lg:col-span-7 order-1 lg:order-2">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80"
+                            alt="Team in a corporate training session" class="w-full h-72 object-cover rounded-sm">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUTIONS OVERVIEW -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="max-w-2xl mb-14">
+                <p class="text-gold-dark font-semibold text-sm mb-3">OUR TRANSFORMATION SOLUTIONS</p>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl">Coaching, education, strategy and
+                    development for every stage of growth.</h2>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-navy/10 border border-navy/10">
+                <div class="bg-white p-7">
+                    <h4 class="font-heading font-semibold text-navy mb-2">Parenting & Family</h4>
+                    <p class="text-sm text-navy/70 leading-relaxed">Building stronger families and an intentional legacy
+                        for future generations.</p>
+                </div>
+                <div class="bg-white p-7">
+                    <h4 class="font-heading font-semibold text-navy mb-2">Executive & Leadership</h4>
+                    <p class="text-sm text-navy/70 leading-relaxed">Helping leaders become more strategic, effective and
+                        transformational.</p>
+                </div>
+                <div class="bg-white p-7">
+                    <h4 class="font-heading font-semibold text-navy mb-2">Business & Entrepreneurial</h4>
+                    <p class="text-sm text-navy/70 leading-relaxed">Developing the thinking, systems and capability to
+                        build sustainable businesses.</p>
+                </div>
+                <div class="bg-white p-7">
+                    <h4 class="font-heading font-semibold text-navy mb-2">Student & Youth</h4>
+                    <p class="text-sm text-navy/70 leading-relaxed">Transforming potential into excellence, purpose and
+                        preparedness for life.</p>
+                </div>
+                <div class="bg-white p-7">
+                    <h4 class="font-heading font-semibold text-navy mb-2">Personal Transformation</h4>
+                    <p class="text-sm text-navy/70 leading-relaxed">Gaining clarity, overcoming barriers and building
+                        powerful habits.</p>
+                </div>
+                <div class="bg-white p-7">
+                    <h4 class="font-heading font-semibold text-navy mb-2">Sales & Performance</h4>
+                    <p class="text-sm text-navy/70 leading-relaxed">Improving motivation, strategy, execution and
+                        results for sales teams.</p>
+                </div>
+                <div class="bg-white p-7">
+                    <h4 class="font-heading font-semibold text-navy mb-2">Corporate Training</h4>
+                    <p class="text-sm text-navy/70 leading-relaxed">Strengthening leadership and building
+                        high-performance cultures.</p>
+                </div>
+                <div class="bg-white p-7">
+                    <h4 class="font-heading font-semibold text-navy mb-2">Speaking & Workshops</h4>
+                    <p class="text-sm text-navy/70 leading-relaxed">Practical, transformational presentations for
+                        conferences and institutions.</p>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="services.html"
+                    class="inline-flex items-center text-navy font-semibold border-b-2 border-gold pb-0.5 hover:text-gold-dark">View
+                    all programmes in detail</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="bg-navy py-20">
+        <div class="max-w-4xl mx-auto px-6 lg:px-10 text-center">
+            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl mb-5">The future is not something you wait
+                for. It is something you intentionally build.</h2>
+            <p class="text-white/70 mb-9 leading-relaxed">Your potential deserves development. Your family deserves
+                intentionality. Your business deserves structure. Let's build it.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="contact.html"
+                    class="bg-gold hover:bg-gold-dark text-navy font-semibold px-7 py-3.5 rounded-sm transition-colors">Book
+                    a Transformation Consultation</a>
+                <a href="services.html"
+                    class="border-2 border-white/40 text-white hover:bg-white hover:text-navy font-semibold px-7 py-3.5 rounded-sm transition-colors">Explore
+                    Our Programmes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy-dark text-white/70 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 grid md:grid-cols-4 gap-10 mb-12">
+            <div class="md:col-span-2">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="font-heading font-extrabold text-2xl text-gold">LICA</span>
+                    <span class="font-heading font-semibold text-sm text-white">Legacy Impact Coaching Academy</span>
+                </div>
+                <p class="text-sm leading-relaxed max-w-sm">Transform Potential. Build Excellence. Create Legacy.</p>
+                <p class="text-xs mt-3 text-white/50">Coaching | Leadership | Parenting | Business | Education |
+                    Performance | Transformation</p>
+            </div>
+            <div>
+                <h5 class="text-white font-heading font-semibold mb-4 text-sm">Explore</h5>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-gold-light">Home</a></li>
+                    <li><a href="about.html" class="hover:text-gold-light">About</a></li>
+                    <li><a href="services.html" class="hover:text-gold-light">Services</a></li>
+                    <li><a href="contact.html" class="hover:text-gold-light">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-white font-heading font-semibold mb-4 text-sm">Contact</h5>
+                <ul class="space-y-2 text-sm">
+                    <li>legacy.academy360@gmail.com</li>
+                    <li>0803 737 2464 (Phone/WhatsApp)</li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-6 lg:px-10 border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between gap-3 text-xs text-white/50">
+            <p>© 2026 Legacy Impact Coaching Academy Ltd. All Rights Reserved.</p>
+            <p>Privacy Policy · Terms & Conditions · Cookie Policy</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menuBtn').addEventListener('click', function () {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
