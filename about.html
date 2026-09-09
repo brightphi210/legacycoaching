@@ -61,6 +61,26 @@
             height: 4px;
             background: #C89B3C;
         }
+
+        .gallery-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-card img {
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-card:hover img {
+            transform: scale(1.06);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            inset-inline: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(8, 39, 69, 0.92) 0%, rgba(8, 39, 69, 0.55) 55%, transparent 100%);
+        }
     </style>
 </head>
 
@@ -257,8 +277,84 @@
         </div>
     </section>
 
-    <!-- TRANSFORMATION METHOD -->
+    <!-- GALLERY -->
     <section class="py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <p class="text-gold-dark font-semibold text-sm mb-3">GALLERY</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl mb-14 max-w-2xl">Moments from our
+                journey.</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="gallery-card rounded-sm aspect-[4/5]">
+                    <img src="prof.jpeg" alt="Leadership training session" class="w-full h-full object-cover">
+                    <div class="gallery-caption p-4">
+                        <h4 class="font-heading font-semibold text-white text-sm">With Dr Niyi Adesanya</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-card rounded-sm aspect-[4/5]">
+                    <img src="prof2.jpeg" alt="Group coaching workshop" class="w-full h-full object-cover">
+                    <div class="gallery-caption p-4">
+                        <h4 class="font-heading font-semibold text-white text-sm">With Ezekiel Solesi, CEO, LIMBsimple
+                            Business Academy</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-card rounded-sm aspect-[4/5]">
+                    <img src="students.jpeg" alt=" Parenting seminar" class="w-full h-full object-cover">
+                    <div class="gallery-caption p-4">
+                        <h4 class="font-heading font-semibold text-white text-sm">Capacity Development workshop with
+                            NYSC members</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-card rounded-sm aspect-[4/5]">
+                    <img src="prof3.jpeg" alt="Students in a mentoring session" class="w-full h-full object-cover">
+                    <div class="gallery-caption p-4">
+                        <h4 class="font-heading font-semibold text-white text-sm">During Strategy Growth Convention,
+                            Lagos</h4>
+                    </div>
+                </div>
+                <div class="gallery-card rounded-sm aspect-[4/5]">
+                    <img src="students2.jpeg" alt="Entrepreneurs collaborating" class="w-full h-full object-cover">
+                    <div class="gallery-caption p-4">
+                        <h4 class="font-heading font-semibold text-white text-sm">After award ceremony at Deeper Life
+                            High School, Warri, Delta State</h4>
+                    </div>
+                </div>
+
+
+                <div class="gallery-card rounded-sm aspect-[4/5]">
+                    <img src="prof4.jpeg" alt="Executive strategy session" class="w-full h-full object-cover">
+                    <div class="gallery-caption p-4">
+                        <h4 class="font-heading font-semibold text-white text-sm">After a radio show with OAP, Kofi
+                            Bartel, Nigerian Info, 93.2FM</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-card rounded-sm aspect-[4/5]">
+                    <img src="prof5.jpeg" alt="Team building activity" class="w-full h-full object-cover">
+                    <div class="gallery-caption p-4">
+                        <h4 class="font-heading font-semibold text-white text-sm">Speaking during Rivers State Campus
+                            Congress</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-card rounded-sm aspect-[4/5]">
+                    <img src="prof6.jpeg" alt="Graduation and certification ceremony"
+                        class="w-full h-full object-cover">
+                    <div class="gallery-caption p-4">
+                        <h4 class="font-heading font-semibold text-white text-sm">Family celebration. L -R, Julius,
+                            Rita, Miebi, Junia</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TRANSFORMATION METHOD -->
+    <section class="py-24 bg-cream">
         <div class="max-w-7xl mx-auto px-6 lg:px-10">
             <p class="text-gold-dark font-semibold text-sm mb-3">THE LEGACY TRANSFORMATION METHOD</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl mb-14 max-w-2xl">From insight to impact.
@@ -335,7 +431,8 @@
             <div class="lg:col-span-4">
                 <div
                     class="aspect-[4/5] rounded-sm bg-gradient-to-br from-navy-light to-navy border border-gold/30 flex items-center justify-center">
-                    <span class="font-heading font-extrabold text-7xl text-gold-light">MFO</span>
+                    <img src="pastor.jpeg" alt="Miebi Francis Ofubu, Founder of Legacy Impact Coaching Academy"
+                        class="w-full h-full object-cover rounded-sm">
                 </div>
             </div>
             <div class="lg:col-span-8">
