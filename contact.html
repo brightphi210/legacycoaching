@@ -69,36 +69,6 @@
             border-color: #C89B3C;
             box-shadow: 0 0 0 3px rgba(200, 155, 60, 0.15);
         }
-
-        #formStatus {
-            display: none;
-        }
-
-        #formStatus.show {
-            display: block;
-        }
-
-        .btn-spinner {
-            display: none;
-        }
-
-        button[data-loading="true"] .btn-label {
-            opacity: 0.6;
-        }
-
-        button[data-loading="true"] .btn-spinner {
-            display: inline-block;
-        }
-
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        .spin {
-            animation: spin 0.7s linear infinite;
-        }
     </style>
 </head>
 
@@ -209,7 +179,7 @@
                     </div>
                 </div>
 
-                <div class="bg-navy text-white p-7 rounded-sm">
+                <!-- <div class="bg-navy text-white p-7 rounded-sm">
                     <h4 class="font-heading font-semibold text-gold-light mb-3">Prefer a direct conversation?</h4>
                     <p class="text-sm text-white/80 leading-relaxed mb-5">Book a Transformation Consultation and speak
                         with us about your goals, challenges and the right next step for you, your family, team or
@@ -218,107 +188,40 @@
                         class="inline-flex bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded-sm transition-colors text-sm">
                         Start the Form Below
                     </a>
-                </div>
+                </div> -->
             </div>
 
-            <!-- RIGHT: Contact Form -->
+            <!-- RIGHT: Direct Email -->
             <div class="lg:col-span-7" id="contact-form">
-                <div class="bg-cream p-8 sm:p-10 rounded-sm border border-navy/10">
-                    <h2 class="font-heading font-bold text-navy text-2xl mb-2">Send us a message</h2>
-                    <p class="text-navy/70 text-sm mb-8">Fill in the form and we’ll get back to you as soon as
-                        possible.</p>
+                <div class="bg-cream p-8 sm:p-10 rounded-sm border border-navy/10 flex flex-col items-start">
+                    <div class="w-14 h-14 bg-navy rounded-sm flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold-light" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h2 class="font-heading font-bold text-navy text-2xl mb-3">Send us a message</h2>
+                    <p class="text-navy/70 leading-relaxed mb-8 max-w-md">Tap the button below to open your email app
+                        with a message already addressed to us. Tell us about your goals, your family, your team or
+                        your organisation, and we'll get back to you within 24–48 hours.</p>
 
-                    <!-- Status banner (success / error) -->
-                    <div id="formStatus" class="mb-6 px-5 py-4 rounded-sm text-sm font-medium" role="status"
-                        aria-live="polite"></div>
+                    <a href="mailto:legacy.academy360@gmail.com?subject=New%20enquiry%20-%20LICA%20website"
+                        id="mailtoBtn"
+                        class="w-full sm:w-auto bg-navy hover:bg-navy-dark text-white font-semibold px-8 py-3.5 rounded-sm transition-colors inline-flex items-center justify-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        Email Us Directly
+                    </a>
 
-                    <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
-
-                        <!-- Optional: nicer email subject line in your inbox -->
-                        <input type="hidden" name="_subject" value="New enquiry from LICA website">
-                        <!-- Honeypot spam trap (leave blank, keep hidden) -->
-                        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-
-                        <div class="grid sm:grid-cols-2 gap-6">
-                            <div>
-                                <label for="firstName" class="block text-sm font-medium text-navy mb-1.5">First
-                                    Name <span class="text-gold-dark">*</span></label>
-                                <input type="text" id="firstName" name="firstName" required
-                                    class="w-full px-4 py-3 border border-navy/20 rounded-sm bg-white text-navy placeholder-navy/40 focus:border-gold transition-colors"
-                                    placeholder="Your first name">
-                            </div>
-                            <div>
-                                <label for="lastName" class="block text-sm font-medium text-navy mb-1.5">Last
-                                    Name <span class="text-gold-dark">*</span></label>
-                                <input type="text" id="lastName" name="lastName" required
-                                    class="w-full px-4 py-3 border border-navy/20 rounded-sm bg-white text-navy placeholder-navy/40 focus:border-gold transition-colors"
-                                    placeholder="Your last name">
-                            </div>
-                        </div>
-
-                        <div class="grid sm:grid-cols-2 gap-6">
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-navy mb-1.5">Email
-                                    Address <span class="text-gold-dark">*</span></label>
-                                <input type="email" id="email" name="email" required
-                                    class="w-full px-4 py-3 border border-navy/20 rounded-sm bg-white text-navy placeholder-navy/40 focus:border-gold transition-colors"
-                                    placeholder="you@example.com">
-                            </div>
-                            <div>
-                                <label for="phone" class="block text-sm font-medium text-navy mb-1.5">Phone /
-                                    WhatsApp</label>
-                                <input type="tel" id="phone" name="phone"
-                                    class="w-full px-4 py-3 border border-navy/20 rounded-sm bg-white text-navy placeholder-navy/40 focus:border-gold transition-colors"
-                                    placeholder="Your phone number">
-                            </div>
-                        </div>
-
-                        <div>
-                            <label for="interest" class="block text-sm font-medium text-navy mb-1.5">I’m
-                                interested in</label>
-                            <select id="interest" name="interest"
-                                class="w-full px-4 py-3 border border-navy/20 rounded-sm bg-white text-navy focus:border-gold transition-colors">
-                                <option value="">Select an option</option>
-                                <option value="parenting">Legacy Parenting & Family Transformation</option>
-                                <option value="students">Student Transformation</option>
-                                <option value="executives">Executive & Leadership Development</option>
-                                <option value="business">Business & Entrepreneurial Coaching</option>
-                                <option value="corporate">Corporate Training, Consulting & Speaking</option>
-                                <option value="assessment">Free Transform Assessment</option>
-                                <option value="partnership">Partnership / Collaboration</option>
-                                <option value="other">Other / General Enquiry</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-navy mb-1.5">Message
-                                <span class="text-gold-dark">*</span></label>
-                            <textarea id="message" name="message" rows="5" required
-                                class="w-full px-4 py-3 border border-navy/20 rounded-sm bg-white text-navy placeholder-navy/40 focus:border-gold transition-colors resize-y"
-                                placeholder="Tell us a little about what you’re looking for or the challenge you’re facing..."></textarea>
-                        </div>
-
-                        <div class="flex items-start gap-3">
-                            <input type="checkbox" id="consent" name="consent" required
-                                class="mt-1 h-4 w-4 rounded border-navy/30 text-gold focus:ring-gold">
-                            <label for="consent" class="text-sm text-navy/70 leading-relaxed">
-                                I agree to be contacted by Legacy Impact Coaching Academy regarding my enquiry and
-                                understand that my information will be handled with care and confidentiality.
-                            </label>
-                        </div>
-
-                        <button type="submit" id="submitBtn"
-                            class="w-full sm:w-auto bg-navy hover:bg-navy-dark text-white font-semibold px-8 py-3.5 rounded-sm transition-colors inline-flex items-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed">
-                            <svg class="btn-spinner spin h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 24 24">
-                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
-                                    stroke-width="4"></circle>
-                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z">
-                                </path>
-                            </svg>
-                            <span class="btn-label">Send Message</span>
-                        </button>
-                    </form>
+                    <p class="text-xs text-navy/50 mt-4">This opens your default email app addressed to
+                        legacy.academy360@gmail.com. No email app set up on this device? Just write to us at <a
+                            href="mailto:legacy.academy360@gmail.com"
+                            class="underline hover:text-gold-dark">legacy.academy360@gmail.com</a>.
+                    </p>
                 </div>
             </div>
         </div>
@@ -410,64 +313,6 @@
     <script>
         document.getElementById('menuBtn').addEventListener('click', function () {
             document.getElementById('mobileMenu').classList.toggle('hidden');
-        });
-
-        // ----- Contact form: AJAX submission to Formspree -----
-        const contactForm = document.getElementById('contactForm');
-        const submitBtn = document.getElementById('submitBtn');
-        const statusBox = document.getElementById('formStatus');
-
-        function showStatus(message, type) {
-            statusBox.textContent = message;
-            statusBox.classList.remove('show', 'bg-green-50', 'text-green-700', 'border', 'border-green-200',
-                'bg-red-50', 'text-red-700', 'border-red-200');
-            if (type === 'success') {
-                statusBox.classList.add('show', 'bg-green-50', 'text-green-700', 'border', 'border-green-200');
-            } else {
-                statusBox.classList.add('show', 'bg-red-50', 'text-red-700', 'border', 'border-red-200');
-            }
-            statusBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
-
-        contactForm.addEventListener('submit', async function (e) {
-            e.preventDefault();
-
-            // Guard: remind the site owner to configure Formspree before going live
-            if (contactForm.action.includes('YOUR_FORM_ID')) {
-                showStatus(
-                    'Form is not fully set up yet: replace YOUR_FORM_ID in the form action with your real Formspree endpoint.',
-                    'error'
-                );
-                return;
-            }
-
-            submitBtn.disabled = true;
-            submitBtn.setAttribute('data-loading', 'true');
-            statusBox.classList.remove('show');
-
-            try {
-                const formData = new FormData(contactForm);
-                const response = await fetch(contactForm.action, {
-                    method: 'POST',
-                    body: formData,
-                    headers: { 'Accept': 'application/json' }
-                });
-
-                if (response.ok) {
-                    showStatus("Thank you — your message has been sent. We'll be in touch within 24–48 hours.", 'success');
-                    contactForm.reset();
-                } else {
-                    const data = await response.json().catch(() => null);
-                    const errMsg = (data && data.errors && data.errors.map(e => e.message).join(', '))
-                        || 'Something went wrong while sending your message. Please try again or email us directly.';
-                    showStatus(errMsg, 'error');
-                }
-            } catch (err) {
-                showStatus('We could not reach the server. Please check your connection and try again, or email us directly at legacy.academy360@gmail.com.', 'error');
-            } finally {
-                submitBtn.disabled = false;
-                submitBtn.removeAttribute('data-loading');
-            }
         });
     </script>
 </body>
